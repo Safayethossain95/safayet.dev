@@ -4,7 +4,7 @@ import { routes } from "../data/global";
 
 function Navbar({ currentPage }) {
   return (
-    <nav className="bg-black p-5 flex items-center justify-between">
+    <nav className="bg-[#000A1F] p-5 flex items-center justify-between">
       <li className="list-none font-bold text-lg cursor-pointer">
         <Link href="/">
           <span className="text-white text-xl flex items-center">
