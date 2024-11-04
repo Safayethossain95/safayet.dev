@@ -9,12 +9,13 @@ export const projects = [
     },
     {
         id:2,
-        name:"Academease",
-        img:"/static/projects/academease.png",
+        name:"BSSIT",
+        img:"/static/projects/bssit.png",
         description:"Spendix is a construction equipment provider operating from Bangladesh.",
         github: "https://github.com/ferrytech",
         liveLink: "https://github.com/ferrytech"
     },
+   
     {
         id:3,
         name:"ILearn",
@@ -25,10 +26,11 @@ export const projects = [
     },
     {
         id:4,
-        name:"BSSIT",
-        img:"/static/projects/bssit.png",
+        name:"Academease",
+        img:"/static/projects/academease.png",
         description:"Spendix is a construction equipment provider operating from Bangladesh.",
         github: "https://github.com/ferrytech",
         liveLink: "https://github.com/ferrytech"
     },
+   
 ]
