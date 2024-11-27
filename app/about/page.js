@@ -7,8 +7,8 @@ const AboutPage = () => {
       currentPage="Projects"
       desc="I'm a passionate web developer and designer coding beautiful websites and apps."
     >
-      <div className="container grid grid-cols-2  mx-auto p-8  text-left">
-        <div className="div">
+      <div className="container grid grid-cols-1  md:grid-cols-2  mx-auto p-8  text-left">
+        <div className="div order-2 md:order-1 mt-[50px] md:mt-[0px]">
           <h1 className="text-4xl font-bold  mb-4 text-fun-pink">About Me</h1>
           <p className=" text-white mb-8">
             Passionate Web Developer specializing in React.js with over 2 years
@@ -29,7 +29,7 @@ const AboutPage = () => {
           </section>
         </div>
 
-        <div className="w-[300px] h-[300px] mx-auto  overflow-hidden rounded-full shadow-custom-blue">
+        <div className="order-1 md:order-2 w-[300px] h-[300px] mx-auto  overflow-hidden rounded-full shadow-custom-blue">
           <Image src={mypropic} alt={"safayet.png"} />
         </div>
 
