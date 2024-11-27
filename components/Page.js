@@ -4,15 +4,19 @@ import Head from "next/head";
 // import MobileNavbar from "../global/MobileNavbar";
 import Navbar from "../components/Navbar";
 import React, { ReactChildren } from "react";
+import Footer from "./Footer";
 
 function Page({ currentPage,children,desc }) {
   const pageTitle = `${
     currentPage === "Home"
-      ? "Brayden Wright - Web Developer, Designer, Creator."
-      : `${currentPage} - BraydenTW.io`
+      ? "safayet.dev - Web Developer"
+      : `${currentPage} - safayet.dev`
   }`;
   console.log(currentPage);
+  
+ 
   return (
+   <>
     <div
       className="w-full m-auto flex flex-col items-center justify-center min-h-screen opening-box-animate-paddin text-white overflow-hidden md:overflow-visible"
       style={{ maxWidth: "1200px" }}
@@ -99,9 +103,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           {/* <MobileNavbar /> */}
         </div>
         {children}
+
       </main>
    
     </div>
+    <div className=" mt-[80px]">
+  <Footer/>
+</div>
+   </>
   );
 }
 

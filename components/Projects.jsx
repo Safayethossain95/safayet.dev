@@ -5,6 +5,7 @@ import { RiGithubLine } from "react-icons/ri";
 const Projects = () => {
   return (
     <>
+      <h1 className="text-3xl font-bold border-b-2 border-fun-pink mb-[50px] text-left">Projects - </h1>
       <div className="allProjects grid grid-cols-1 md:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <div key={index} className="singleProject">

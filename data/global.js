@@ -12,7 +12,7 @@ export const routes = [
       path: "/projects",
     },
     {
-      title: "Designs",
-      path: "/designs",
+      title: "About Me",
+      path: "/about",
     },
   ];

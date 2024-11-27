@@ -14,6 +14,9 @@ module.exports = {
       monospace: ["DM Mono", "monospace"],
     },
     extend: {
+      boxShadow: {
+        'custom-blue': '0px 0px 30px 4px rgba(0, 199, 255, 0.7)',
+      },
       colors: {
         bg: "#000a1f",
         "fun-gray-light": "#b2bbcf",
