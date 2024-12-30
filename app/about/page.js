@@ -58,11 +58,9 @@ const AboutPage = () => {
         <section className="mb-8">
           <h2 className="text-2xl font-semibold mb-4">Work Experience</h2>
           <div className="mb-4">
-            <h3 className="text-xl font-semibold">Junior React Developer</h3>
-            <p>
-              <strong>BSSIT (Dec 2022 - Present)</strong>
-            </p>
-            <p>
+            <h3 className="text-xl font-semibold mb-5">Junior React Developer at BSSIT (Dec 2022 - Present)</h3>
+           
+            <p className="text-[#8491A0]">
               Developed and integrated the Billing Module and multiple
               dashboards (Student, Teacher, Admin) in a School Management System
               using React.js, React Router v6, and Context API.
@@ -71,7 +69,7 @@ const AboutPage = () => {
           <div>
             <h3 className="text-xl font-semibold">Student Support Associate</h3>
             <p>
-              <strong>Creative IT Institute</strong>
+              <strong>Creative IT Institute (June 2021 - Nov 2022)</strong>
             </p>
             <p>
               Assisted over 100+ web design students in mastering HTML, CSS,
@@ -123,29 +121,6 @@ const AboutPage = () => {
             </li>
             <li className="bg-gray-800 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
               <a
-                href="http://www.bssitbd.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-between py-3 px-4 text-white hover:text-[#00C7FF]"
-              >
-                <span className="text-xl font-medium">BSSIT Website</span>
-                <svg
-                  className="w-6 h-6 text-[#00C7FF]"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li className="bg-gray-800 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
-              <a
                 href="https://ferrytech.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -169,12 +144,59 @@ const AboutPage = () => {
             </li>
             <li className="bg-gray-800 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
               <a
+                href="http://www.bssitbd.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between py-3 px-4 text-white hover:text-[#00C7FF]"
+              >
+                <span className="text-xl font-medium">BSSIT Website</span>
+                <svg
+                  className="w-6 h-6 text-[#00C7FF]"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </li>
+            
+            <li className="bg-gray-800 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+              <a
                 href="https://academease.netlify.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-between py-3 px-4 text-white hover:text-[#00C7FF]"
               >
                 <span className="text-xl font-medium">Academease</span>
+                <svg
+                  className="w-6 h-6 text-[#00C7FF]"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li className="bg-gray-800 rounded-lg shadow-md transition-transform transform hover:scale-105 hover:shadow-lg">
+              <a
+                href="https://new.tarbiyahinst.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between py-3 px-4 text-white hover:text-[#00C7FF]"
+              >
+                <span className="text-xl font-medium">Tarbiyah Institute</span>
                 <svg
                   className="w-6 h-6 text-[#00C7FF]"
                   fill="none"
