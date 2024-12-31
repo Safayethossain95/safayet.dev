@@ -68,11 +68,11 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* <div className="flex flex-col gap-6">
+      <div className="flex flex-col gap-6">
         {cards.map((card, index) => (
           <Card key={card.id} bgColor={card.bgColor} text={card.text} index={index} />
         ))}
-      </div> */}
+      </div>
     </>
   );
 };
