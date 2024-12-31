@@ -3,14 +3,10 @@ import { projects } from "@/data/projects";
 import Image from "next/image";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { useRouter } from 'next/navigation';
-const cards = [
-  { id: 1, bgColor: "bg-[#52B2CF]", text: "Card 1" },
-  { id: 2, bgColor: "bg-[#E5A36F]", text: "Card 2" },
-  { id: 3, bgColor: "bg-[#9CADCE]", text: "Card 3" },
-  { id: 4, bgColor: "bg-[#D4AFB9]", text: "Card 4" },
-];
+
 
 import { useEffect, useState } from 'react';
+import { SectionHeader } from "./SectionHeader";
 
 const Projects = () => {
   const router = useRouter();
@@ -18,21 +14,17 @@ const Projects = () => {
     window.open(myitem.liveLink, '_blank');
   }
 
-  const Card = ({ bgColor, text, index }) => {
-    
-
-    return (
-      <div
-        className={`sticky top-5 ${bgColor} flex items-center justify-center rounded-[50px] shadow-lg h-[87vh] transition-all duration-500`}
-        style={{ transform: `translateY(${index * 30}px)` }}
-      >
-        <h2 className="text-white text-3xl font-bold">{text}</h2>
-      </div>
-    );
-  };
+  
   return (
     <>
-      <h1 className="text-3xl font-bold border-b-2 border-fun-pink mb-[50px] text-left">Projects - </h1>
+     <div className="container">
+      <div className=" mb-10">
+          <SectionHeader
+                eyebrow="Real-World Results"
+                title="Featured Projects"
+                description="Discover how I turned creative visions into impactful digital solutions."
+              />
+          </div>
       <div className="allProjects grid grid-cols-1 md:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <div key={index} onClick={() => handlereroute(project)} className="singleProject" style={{ cursor: "pointer" }}>
@@ -67,12 +59,9 @@ const Projects = () => {
           </div>
         ))}
       </div>
+     </div>
 
-      <div className="flex flex-col gap-6">
-        {cards.map((card, index) => (
-          <Card key={card.id} bgColor={card.bgColor} text={card.text} index={index} />
-        ))}
-      </div>
+      
     </>
   );
 };

@@ -17,7 +17,7 @@ function Page({ currentPage, children, desc }) {
     <>
       <div
         className="w-full m-auto flex flex-col items-center justify-center min-h-screen opening-box-animate-paddin text-white overflow-hidden md:overflow-visible"
-        style={{ maxWidth: "1200px" }}
+        
       >
         <Head>
           <title>{pageTitle}</title>
@@ -89,15 +89,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <noscript
           dangerouslySetInnerHTML={{
             __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KC3CN7V"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
         ></noscript>
-
-        <main className="p-5 w-full flex-1 text-center">
-         
-            <Navbar />
-    
-        
+        <main className="w-full flex-1 text-center">
+          <Navbar />
           {children}
         </main>
       </div>

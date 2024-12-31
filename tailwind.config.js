@@ -11,11 +11,27 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
   theme: {
+    screens: {
+      sm: "375px",
+      md: "768px",
+      lg: "1200px",
+    },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        md: "2rem",
+      },
+    },
     fontFamily: {
       sans: ["Be Vietnam Pro", "Inter", "system-ui", "sans-serif"], // Added 'sans-serif' for better fallback
       monospace: ["DM Mono", "monospace"],
+      c:["Calistoga","serif"]
     },
     extend: {
+      zIndex: {
+        '-2': '-2', // Add negative z-index
+      },
       boxShadow: {
         'custom-blue': '0px 0px 30px 4px rgba(0, 199, 255, 0.7)',
       },
@@ -37,6 +53,14 @@ module.exports = {
         '360': '360deg', // This is okay for custom rotation
       },
       keyframes: {
+        "move-left": {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
+        "move-right": {
+          "0%": { transform: "translateX(-50%)" },
+          "100%": { transform: "translateX(0%)" },
+        },
         fadeIn: {
           '0%': { transform: 'translateY(0px)' },
           '50%': { transform: 'translateY(-20px)' },
@@ -51,6 +75,8 @@ module.exports = {
       animation: {
         'upAndDown': 'fadeIn 3s ease-out infinite',
         'fadeInIt': 'fadeinit 3s ease-out',
+        "move-left": "move-left 1s linear infinite",
+        "move-right": "move-right 1s linear infinite",
          // This is well defined
       },
       willChange: {

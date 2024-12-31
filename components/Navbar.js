@@ -7,14 +7,15 @@ function Navbar({ currentPage }) {
   const [isOpen, setIsOpen] = useState(false); // State for mobile menu toggle
 
   return (
-    <nav className="bg-[#000A1F] p-5 flex items-center justify-between relative">
+   <div className="container">
+     <nav className="bg-[#000A1F] p-5 flex items-center justify-between relative">
     {/* Logo */}
     <Link href="/" className="font-bold text-lg cursor-pointer">
-      <span className="text-white text-xl flex items-center">
+      <span className="text-white  text-xl flex items-center">
         {"safayet.dev".split("").map((letter, index) => (
           <span
             key={index}
-            className="hover:text-[#00C7FF] hover:-mt-2 transition-all duration-500"
+            className="hover:text-[#00C7FF] font-normal font-c hover:-mt-2 transition-all duration-500"
           >
             {letter}
           </span>
@@ -75,14 +76,14 @@ function Navbar({ currentPage }) {
         </ul>
       </div>
     <ul
-        className={`hidden md:block absolute top-16 left-0 w-full bg-[#000A1F] md:static md:flex md:space-x-10 md:items-center md:w-auto transition-all duration-300 ${
+        className={`px-6 py-1 border border-gray-500 rounded-[20px] hidden md:block absolute top-16 left-0 w-full bg-[#000A1F] md:static md:flex md:space-x-10 md:items-center md:w-auto transition-all duration-300 ${
           isOpen ? "block" : "hidden"
         }`}
       >
         {routes.map((item, index) => (
           <li
             key={index}
-            className={`list-none text-white text-center md:text-left ${
+            className={`list-none  text-white text-center md:text-left ${
               currentPage === item.title
                 ? "opacity-100"
                 : "opacity-40 hover:opacity-100 transition-opacity"
@@ -93,6 +94,7 @@ function Navbar({ currentPage }) {
         ))}
       </ul>
   </nav>
+   </div>
   
   );
 }
